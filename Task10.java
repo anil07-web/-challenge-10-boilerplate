@@ -13,8 +13,11 @@ public class Task10{
              days[2]=29;
             System.out.println("             Calendar               ");
             System.out.println("   S    M    Tu   W    T    F    S");
-            for (int i = 0; i < d; i++)
-                System.out.print("     ");
+            for (int i = 0; i < d; i++){
+                if(d==7)
+                break;
+            System.out.print("     ");
+            }
             for (int i = 1; i <= days[m]; i++) {
                 System.out.printf(" %3d ", i);
                 if (((i + d) % 7 == 0) || (i == days[m])) 
